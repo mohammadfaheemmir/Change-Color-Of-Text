@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick function to button</title>
+    <style>
+        /* .box{
+            text-align: center;
+            margin: 200px;
+        }
+
+        button{
+            margin:;
+        } */
+
+        .container{
+            text-align: center;
+            padding: 80px;
+        }
+
+        .box{
+            margin-bottom: 20px;
+            font-size: 50px;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        button{
+            padding: 20px;
+            width: 300px;
+            border: none;
+            color:#000;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 800;
+            cursor: pointer;
+            border-radius: 3px;
+            box-shadow: 2px 2px 10px black;
+            background-color: lightslategrey;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">Hello Bacho</div>
+    <button onclick="changecolor('red')">Click me</button>
+    <button onclick="changecolor('green')">Click me</button>
+    <button onclick="changecolor('pink')">Click me</button> -->
+    <div class="container">
+        <div class="box">Change the color of text</div>
+        <button onclick="changecolor()">Click me</button>
+    </div>
+    <script>
+        function changecolor(){
+            document.querySelector('.box').style.color='green';
+        }
+        // function changecolor(color){
+        //     document.querySelector('.box').style.color=color;
+        // }
+    </script>
+</body>
+</html>
